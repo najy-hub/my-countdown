@@ -65,7 +65,7 @@
 </head>
 <body>
 
-  <h1>بقي على انتهاء العرض:</h1>
+  <h1> زمن العرض:</h1>
 
   <div class="countdown-container">
     <div class="time-box">
