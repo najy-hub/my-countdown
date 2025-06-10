@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>العد التنازلي لإطلاق الدورة</title>
+  <title>العد التنازلي المخصص</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,7 +65,7 @@
 </head>
 <body>
 
-  <h1>Solar Professional Engineer</h1>
+  <h1>بقي على انتهاء العرض:</h1>
 
   <div class="countdown-container">
     <div class="time-box">
@@ -87,14 +87,17 @@
   </div>
 
   <script>
-    const targetDate = new Date("July 1, 2025 00:00:00").getTime();
+    // نحسب الوقت المستهدف بإضافة 2 يوم + 6 ساعات + 30 دقيقة
+    const now = new Date();
+    const countdownDuration = (2 * 24 * 60 * 60 + 6 * 60 * 60 + 30 * 60) * 1000; // بالمللي ثانية
+    const targetDate = new Date(now.getTime() + countdownDuration).getTime();
 
-    const updateCountdown = () => {
+    function updateCountdown() {
       const now = new Date().getTime();
       const distance = targetDate - now;
 
-      if (distance < 0) {
-        document.querySelector(".countdown-container").innerHTML = "<h2>انطلقت الدورة!</h2>";
+      if (distance <= 0) {
+        document.querySelector(".countdown-container").innerHTML = "<h2>انتهى الوقت!</h2>";
         return;
       }
 
@@ -107,7 +110,7 @@
       document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
       document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
       document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
-    };
+    }
 
     updateCountdown();
     setInterval(updateCountdown, 1000);
