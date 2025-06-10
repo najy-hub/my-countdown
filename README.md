@@ -110,7 +110,7 @@
   </div>
 
   <!-- زر الاشتراك -->
-  <a class="btn-subscribe" href="https://wa.me/XXXXXXXXXXX" target="_blank">اشترك الآن</a>
+  <a class="btn-subscribe" href="https://forms.gle/xHfeBsH9rEA19R3t5" target="_blank">اشترك الآن</a>
 
   <script>
     // نحسب الوقت المستهدف بإضافة 2 يوم + 6 ساعات + 30 دقيقة
