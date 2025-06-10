@@ -65,7 +65,7 @@
 </head>
 <body>
 
-  <h1>Solar Professional Engineer!</h1>
+  <h1>Solar Professional Engineer</h1>
 
   <div class="countdown-container">
     <div class="time-box">
