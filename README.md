@@ -24,6 +24,7 @@
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
+      margin-bottom: 40px;
     }
 
     .time-box {
@@ -47,6 +48,23 @@
       color: #ccc;
     }
 
+    .btn-subscribe {
+      background-color: #00d1b2;
+      color: #fff;
+      font-size: 20px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-subscribe:hover {
+      background-color: #00a896;
+    }
+
     @media (max-width: 500px) {
       .time-box {
         width: 80px;
@@ -60,12 +78,17 @@
       .time-label {
         font-size: 14px;
       }
+
+      .btn-subscribe {
+        font-size: 18px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1> زمن العرض:</h1>
+  <h1>بقي على انتهاء العرض:</h1>
 
   <div class="countdown-container">
     <div class="time-box">
@@ -85,6 +108,9 @@
       <div class="time-label">ثواني</div>
     </div>
   </div>
+
+  <!-- زر الاشتراك -->
+  <a class="btn-subscribe" href="https://wa.me/XXXXXXXXXXX" target="_blank">اشترك الآن</a>
 
   <script>
     // نحسب الوقت المستهدف بإضافة 2 يوم + 6 ساعات + 30 دقيقة
